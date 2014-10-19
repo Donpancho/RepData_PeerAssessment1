@@ -1,0 +1,234 @@
+#PA1_template.Rmd
+
+#RepData_PeerAssessment1 (Donpancho) – Assignment 1
+
+#R-Code Listing - 
+debug(ls)
+ ls()
+ ls()
+ x1 <- rnorm(10) 
+x2 <- rnorm(10) 
+library(datasets)
+
+Rprof() 
+fit <- lm(y ~ x1 + x2) 
+Rprof(NULL)
+ library(datasets) 
+Rprof() 
+fit <- lm(y ~ x1 + x2)
+ y <- rnorm(10) 
+Rprof()
+
+Rprof()
+ fit <- lm(y ~ x1 + x2)
+ Rprof(NULL) 
+summaryRprof()
+ summaryRprof(lm)
+
+summaryRprof()
+ library(datasets)
+ Rprof() 
+fit <- lm(y ~ x1 + x2) 
+Rprof(NULL)
+
+summaryRprof()
+ source("pollutantmean.R")
+ pollutantmean("specdata", "sulfate", 1:10)
+ pwd()
+ cov = c(1, 0, 0, 1)
+
+bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 500)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS)
+ cov = c(1, 0, 0, 1)
+
+bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 500)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS)
+ cov = c(1, 0, 0, 1)
+
+bivn <- mvrnorm(10000, mu = c(0, 0), Sigma = matrix(cov, 2)) 
+bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 500)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS)
+ cov = c(1, 0, 0, 1)
+
+bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 50)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 500)
+ library(MASS)
+
+
+cov = c(1, 0, 0, 1)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 500) 
+image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS)
+ cov = c(1, 0, 0, 1)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 1000)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS)
+ cov = c(1, 0, 0, 1)
+
+bivn <- mvrnorm(10000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 1000)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS)
+ cov = c(1, 0, 0, 1)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100) 
+image(bivn.kde); contour(bivn.kde, add = T) 
+library(MASS)
+
+cov = c(1, 1, 1, 1) 
+bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2)) 
+bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS) 
+cov = c(1, 2, 2, 1)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS)
+ cov = c(1, 0.5, 0.5, 1)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+
+bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS)
+ cov = c(1, 0, 0, 1)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS)
+
+cov = c(1, 0, 0, 2)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS)
+ cov = c(1, 0, 0, 3)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS)
+
+cov = c(1, 0, 0, 10)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde); contour(bivn.kde, add = T)
+ library(MASS)
+
+cov = c(1, 0, 0, 10)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde);
+ library(MASS)
+
+cov = c(1, 0, 0, 1) 
+bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde);
+ library(MASS)
+
+cov = c(1, 0, 0, 1)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2)) 
+bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde);
+ axis(1, at = seq(-3, 3, 1))
+
+library(MASS)
+ cov = c(1, 0, 0, 1)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde);
+
+axis(1, at = seq(-3, 3, 1))
+ axis(2, at = seq(-3, 3, 1))
+ library(MASS)
+ cov = c(1, 0, 0, 1)
+
+bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde);
+
+axis(1, at = seq(-6, 6, 1))
+ axis(2, at = seq(-6, 6, 1))
+ library(MASS)
+ cov = c(1, 0, 0, 2)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde);
+ axis(1, at = seq(-6, 6, 1))
+
+axis(2, at = seq(-6, 6, 1))
+ library(MASS)
+ cov = c(1, 0, 0, 3)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+
+image(bivn.kde);
+ axis(1, at = seq(-6, 6, 1))
+ axis(2, at = seq(-6, 6, 1))
+ library(MASS)
+ cov = c(1, 0, 0, 4) 
+
+
+bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde); axis(1, at = seq(-6, 6, 1)) axis(2, at = seq(-6, 6, 1))
+ library(MASS) cov = c(1, 0, 0, 5)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100) image(bivn.kde);
+
+axis(1, at = seq(-6, 6, 1)) 
+axis(2, at = seq(-6, 6, 1))
+ library(MASS)
+ cov = c(1, 0, 0, 6)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde); 
+axis(1, at = seq(-6, 6, 1))
+ axis(2, at = seq(-6, 6, 1))
+ library(MASS)
+
+
+
+
+
+
+
+cov = c(1, 0, 0, 1)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde);
+ axis(1, at = seq(-6, 6, 1)) 
+axis(2, at = seq(-6, 6, 1))
+ library(MASS)
+ cov = c(1, 0, 0, 3)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100)
+ image(bivn.kde); 
+axis(1, at = seq(-6, 6, 1))
+
+
+axis(2, at = seq(-6, 6, 1))
+ library(MASS)
+cov = c(1, 0, 0, 6) 
+bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2)) 
+bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100) 
+image(bivn.kde);
+ axis(1, at = seq(-6, 6, 1)) 
+axis(2, at = seq(-6, 6, 1))
+ library(MASS) 
+cov = c(1, 0.5, 0.5, 1)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
+ bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 100) image(bivn.kde);
+ axis(1, at = seq(-6, 6, 1)) axis(2, at = seq(-6, 6, 1))
+ library(MASS) 
+cov = c(1, 1, 1, 1)
+ bivn <- mvrnorm(1000, mu = c(0, 0), Sigma = matrix(cov, 2))
